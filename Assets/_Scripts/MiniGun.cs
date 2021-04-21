@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class MiniGun : MonoBehaviour
 {
@@ -18,11 +19,14 @@ public class MiniGun : MonoBehaviour
 
     public int currentAmmo = 100;
 
+    public Text ammoText;
+
     // Update is called once per frame
 
     void Awake()
     {
         instance = this;
+        ammoText.text = currentAmmo.ToString();
     }
     void Update()
     {
@@ -35,6 +39,7 @@ public class MiniGun : MonoBehaviour
                 nextTimeToFire = Time.time + 1f / fireRate;
                 Shoot();
                 currentAmmo--;
+                UpdateAmmoUI();
             }
         }
 
@@ -57,5 +62,10 @@ public class MiniGun : MonoBehaviour
             gunAnim.SetTrigger("Shoot");
         }
 
+    }
+
+    public void UpdateAmmoUI()
+    {
+        ammoText.text = currentAmmo.ToString();
     }
 }

@@ -67,20 +67,26 @@
     <Compile Include="Assets\_Scripts\AmmoPickup.cs" />
     <Compile Include="Assets\_Scripts\BillBoard.cs" />
     <Compile Include="Assets\_Scripts\DestroyOverTime.cs" />
+    <Compile Include="Assets\_Scripts\EndGame.cs" />
     <Compile Include="Assets\_Scripts\EnemyBullet.cs" />
     <Compile Include="Assets\_Scripts\EnemyController.cs" />
     <Compile Include="Assets\_Scripts\Gun.cs" />
+    <Compile Include="Assets\_Scripts\HealthPickup.cs" />
     <Compile Include="Assets\_Scripts\Inventory\Holder.cs" />
     <Compile Include="Assets\_Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\_Scripts\Inventory\Inventory_Slot.cs" />
     <Compile Include="Assets\_Scripts\Inventory\Item.cs" />
+    <Compile Include="Assets\_Scripts\KeyPickup.cs" />
     <Compile Include="Assets\_Scripts\Melee.cs" />
     <Compile Include="Assets\_Scripts\MiniGun.cs" />
+    <Compile Include="Assets\_Scripts\NextLevelPickup.cs" />
     <Compile Include="Assets\_Scripts\PlayerController.cs" />
     <Compile Include="Assets\_Scripts\Skills_Manager\Ability.cs" />
     <Compile Include="Assets\_Scripts\Skills_Manager\Skill.cs" />
     <Compile Include="Assets\_Scripts\SlowMotion.cs" />
+    <Compile Include="Assets\_Scripts\SpawnObject.cs" />
     <Compile Include="Assets\_Scripts\WeaponSwitching.cs" />
+    <Compile Include="Assets\_Scripts\goldCoin.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -618,11 +624,17 @@
     <Reference Include="Unity.2D.PixelPerfect.Editor">
       <HintPath>C:/SE2250b/Project/SE2250-Final-Project/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>C:/SE2250b/Project/SE2250-Final-Project/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/SE2250b/Project/SE2250-Final-Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>C:/SE2250b/Project/SE2250-Final-Project/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>C:/SE2250b/Project/SE2250-Final-Project/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/SE2250b/Project/SE2250-Final-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

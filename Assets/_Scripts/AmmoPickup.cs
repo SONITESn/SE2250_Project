@@ -22,6 +22,7 @@ public class AmmoPickup : MonoBehaviour
         if(other.tag == "Player")
         {
             MiniGun.instance.currentAmmo += ammoAmount;
+            MiniGun.instance.UpdateAmmoUI();
 
             Destroy(gameObject);
         }
