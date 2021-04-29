@@ -16,6 +16,7 @@ public class BillBoard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // make object face player
         transform.LookAt(PlayerController.instance.transform.position, -Vector3.forward);
     }
 }

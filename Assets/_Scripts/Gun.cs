@@ -19,6 +19,7 @@ public class Gun : MonoBehaviour
             Shoot();
         }
 
+        // fucntion uses racast to damage enemy
         void Shoot()
         {
             RaycastHit hit;

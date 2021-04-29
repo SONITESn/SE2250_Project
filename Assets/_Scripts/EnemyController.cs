@@ -35,12 +35,13 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if player is in certain distance from player
         if(Vector3.Distance(transform.position, PlayerController.instance.transform.position) < playerRange)
         {
             Vector3 playerDirection = PlayerController.instance.transform.position - transform.position;
 
             theRB.velocity = playerDirection.normalized * moveSpeed;
-
+            //spawn enemy bullet
             if (shouldShoot)
             {
                 shotCounter -= Time.deltaTime;
@@ -58,12 +59,13 @@ public class EnemyController : MonoBehaviour
                 }
             }
         }
-        else
+        else 
         {
-            theRB.velocity = Vector2.zero;
+            theRB.velocity = Vector2.zero; //enemy stops following player
         }
     }
 
+    //fucntion when enemy takes damage
     public void TakeDamage()
 
     {
@@ -78,6 +80,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    // function to Attack Player
     public void AttackPlayer()
     {
         PlayerController.instance.TakeDamage(5);

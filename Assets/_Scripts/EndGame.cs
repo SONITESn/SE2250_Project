@@ -21,9 +21,9 @@ public class EndGame : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if(PlayerController.instance.killPoints == 5)
+            if(PlayerController.instance.killPoints == 5) //checks if player finishes objecives
             {
-                SceneManager.LoadScene("End_Game");
+                SceneManager.LoadScene("End_Game"); //player spawns at endgame scene
             }
       
         }

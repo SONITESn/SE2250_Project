@@ -21,7 +21,7 @@ public class NextLevelPickup : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene("Level_2");
+            SceneManager.LoadScene("Level_2"); //Spawn Player to next level
         }
     }
 }

@@ -22,14 +22,14 @@ public class EnemyBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        theRB.velocity = direction * bullet_speed;
+        theRB.velocity = direction * bullet_speed; //follow player
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            PlayerController.instance.TakeDamage(damageAmount);
+            PlayerController.instance.TakeDamage(damageAmount); //damage player
             Destroy(gameObject);
         }
     }

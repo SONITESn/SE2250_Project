@@ -30,7 +30,7 @@ public class MiniGun : MonoBehaviour
     }
     void Update()
     {
-       
+       //weapon contains ammo and fire rate
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
             
@@ -43,6 +43,7 @@ public class MiniGun : MonoBehaviour
             }
         }
 
+        // fucntion uses racast to damage enemy
         void Shoot()
         {
             
@@ -56,8 +57,6 @@ public class MiniGun : MonoBehaviour
                 {
                     hit.transform.parent.GetComponent<EnemyController>().TakeDamage();
                 }
-
-               
             }
             gunAnim.SetTrigger("Shoot");
         }

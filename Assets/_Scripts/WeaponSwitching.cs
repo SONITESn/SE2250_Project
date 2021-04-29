@@ -15,6 +15,7 @@ public class WeaponSwitching : MonoBehaviour
     {
         int previousSelectedWeapon = selectedWeapon;
 
+        // switch weapons through mouse scroll
         if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
             if (selectedWeapon >= transform.childCount - 1)
@@ -31,6 +32,7 @@ public class WeaponSwitching : MonoBehaviour
                 selectedWeapon--;
         }
 
+        //swtich weapons through number keys
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             selectedWeapon = 0;

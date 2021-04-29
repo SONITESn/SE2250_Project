@@ -129,6 +129,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // function when player takes damage from enemy
     public void TakeDamage(int damage_amount)
     {
         currentHealth -= damage_amount;
@@ -145,6 +146,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    // function when player gets health
     public void AddHealth(int healAmount)
     {
         currentHealth += healAmount;
@@ -155,6 +157,7 @@ public class PlayerController : MonoBehaviour
         healthText.text = currentHealth.ToString() + "%";
     }
 
+    //functions update player UI
     public void UpdateHealthUI()
     {
         healthText.text = currentHealth.ToString() + "%";

@@ -17,10 +17,12 @@ public class AmmoPickup : MonoBehaviour
         
     }
 
+    //function if player comes in contact with pickup
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
+            //player gets item and update UI
             MiniGun.instance.currentAmmo += ammoAmount;
             MiniGun.instance.UpdateAmmoUI();
 
